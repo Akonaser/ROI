@@ -1,0 +1,124 @@
+
+========== SMART GROCERY BILLING ==========
+1. View products and stock
+2. Register product
+3. Add to cart
+4. View cart
+5. Generate bill and checkout
+6. Clear cart
+0. Exit
+Choose an option:
+========== AVAILABLE PRODUCTS ==========
+ID     Product                  Price (RM)     Sellable units
+1      Rice                     15.00          20
+2      Milk                     7.50           15
+3      Bread                    4.00           25
+4      Eggs                     12.00          18
+5      Cooking Oil              9.50           12
+
+========== SMART GROCERY BILLING ==========
+1. View products and stock
+2. Register product
+3. Add to cart
+4. View cart
+5. Generate bill and checkout
+6. Clear cart
+0. Exit
+Choose an option: New product ID (1-6 letters or digits): Product name: Unit price (RM): Opening stock: Product registered.
+
+========== SMART GROCERY BILLING ==========
+1. View products and stock
+2. Register product
+3. Add to cart
+4. View cart
+5. Generate bill and checkout
+6. Clear cart
+0. Exit
+Choose an option:
+========== AVAILABLE PRODUCTS ==========
+ID     Product                  Price (RM)     Sellable units
+1      Rice                     15.00          20
+2      Milk                     7.50           15
+3      Bread                    4.00           25
+4      Eggs                     12.00          18
+5      Cooking Oil              9.50           12
+A01    Apples                   2.35           6
+
+Enter product ID: Enter quantity: Product added to cart successfully.
+
+========== SMART GROCERY BILLING ==========
+1. View products and stock
+2. Register product
+3. Add to cart
+4. View cart
+5. Generate bill and checkout
+6. Clear cart
+0. Exit
+Choose an option:
+========== SHOPPING CART ==========
+Product                    Qty    Unit (RM)   Subtotal (RM)
+Milk                         2         7.50           15.00
+Total: RM 15.00
+
+========== SMART GROCERY BILLING ==========
+1. View products and stock
+2. Register product
+3. Add to cart
+4. View cart
+5. Generate bill and checkout
+6. Clear cart
+0. Exit
+Choose an option:
+========== AVAILABLE PRODUCTS ==========
+ID     Product                  Price (RM)     Sellable units
+1      Rice                     15.00          20
+2      Milk                     7.50           15
+3      Bread                    4.00           25
+4      Eggs                     12.00          18
+5      Cooking Oil              9.50           12
+A01    Apples                   2.35           6
+
+Enter product ID: Enter quantity: Input error: Your cart quantity exceeds the available stock.
+
+========== SMART GROCERY BILLING ==========
+1. View products and stock
+2. Register product
+3. Add to cart
+4. View cart
+5. Generate bill and checkout
+6. Clear cart
+0. Exit
+Choose an option:
+========== FINAL BILL ==========
+Product                    Qty    Unit (RM)   Subtotal (RM)
+Milk                         2         7.50           15.00
+Total: RM 15.00
+Confirm purchase? (y/n): Purchase saved. Stock updated.
+
+========== SMART GROCERY BILLING ==========
+1. View products and stock
+2. Register product
+3. Add to cart
+4. View cart
+5. Generate bill and checkout
+6. Clear cart
+0. Exit
+Choose an option:
+========== AVAILABLE PRODUCTS ==========
+ID     Product                  Price (RM)     Sellable units
+1      Rice                     15.00          20
+2      Milk                     7.50           13
+3      Bread                    4.00           25
+4      Eggs                     12.00          18
+5      Cooking Oil              9.50           12
+A01    Apples                   2.35           6
+
+========== SMART GROCERY BILLING ==========
+1. View products and stock
+2. Register product
+3. Add to cart
+4. View cart
+5. Generate bill and checkout
+6. Clear cart
+0. Exit
+Choose an option: Goodbye.
