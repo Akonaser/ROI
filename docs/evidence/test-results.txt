@@ -1,0 +1,19 @@
+test_assignment_checkout_cancel_confirm_and_restart (test_console.GroceryConsoleTests.test_assignment_checkout_cancel_confirm_and_restart) ... ok
+test_assignment_rejects_invalid_entries_and_saves_new_product (test_console.GroceryConsoleTests.test_assignment_rejects_invalid_entries_and_saves_new_product) ... ok
+test_dates_revalidation_and_persistence_in_final_project (test_console.GroceryConsoleTests.test_dates_revalidation_and_persistence_in_final_project) ... ok
+test_demo_alerts_checkout_discard_and_reset (test_console.GroceryConsoleTests.test_demo_alerts_checkout_discard_and_reset) ... ok
+test_final_project_can_split_stock_saved_in_assignment_2 (test_console.GroceryConsoleTests.test_final_project_can_split_stock_saved_in_assignment_2) ... ok
+test_invalid_json_is_preserved (test_console.GroceryConsoleTests.test_invalid_json_is_preserved) ... ok
+test_cancel_preserves_cart_and_stock (test_gui.DesktopTransactionTests.test_cancel_preserves_cart_and_stock) ... ok
+test_checkout_saves_stock_and_clears_cart (test_gui.DesktopTransactionTests.test_checkout_saves_stock_and_clears_cart) ... ok
+test_failed_save_preserves_cart_and_stock (test_gui.DesktopTransactionTests.test_failed_save_preserves_cart_and_stock) ... ok
+test_register_product_saves_exact_price (test_gui.DesktopTransactionTests.test_register_product_saves_exact_price) ... ok
+test_invalid_discard_references_and_values (test_storage.StorageValidationTests.test_invalid_discard_references_and_values) ... ok
+test_invalid_identity_and_structure (test_storage.StorageValidationTests.test_invalid_identity_and_structure) ... ok
+test_invalid_prices_and_quantities (test_storage.StorageValidationTests.test_invalid_prices_and_quantities) ... ok
+test_valid_undated_stock_and_discard_history_round_trip (test_storage.StorageValidationTests.test_valid_undated_stock_and_discard_history_round_trip) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.243s
+
+OK
