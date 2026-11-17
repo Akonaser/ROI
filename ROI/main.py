@@ -47,6 +47,7 @@ def display_menu(track_expiry):
 
 
 def run_menu(inventory, track_expiry, path):
+    # The cart lasts for this session; confirmed stock changes are saved.
     cart = {}
     while True:
         display_menu(track_expiry)
@@ -92,6 +93,7 @@ def main():
     parser.add_argument("--data", type=Path, default=Path("inventory.json"), help="path to the inventory file")
     args = parser.parse_args()
     try:
+        # Demo stock uses a temporary file so real inventory stays untouched.
         if args.demo:
             with TemporaryDirectory() as folder:
                 print("Demo mode. Sample stock resets when you exit.")
