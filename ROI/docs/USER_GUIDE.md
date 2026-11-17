@@ -2,7 +2,7 @@
 
 ## Start on macOS
 
-Open the project folder in VS Code. Select Terminal > Run Task > Grocery: Run desktop app. To launch from the integrated terminal, enter `python3 gui.py`. Python 3.10 or later with Tkinter is required. The current Mac has Python 3.15 and Tk 9.
+Open the repository root in VS Code. For manual terminal commands below, first enter `cd ROI`. Select Terminal > Run Task > Grocery: Run desktop app. To launch from the integrated terminal, enter `python3 gui.py`. Python 3.10 or later with Tkinter is required. The current Mac has Python 3.15 and Tk 9.
 
 The first run provides five sample products. Milk has product ID 2, a unit price of RM 7.50 and 15 units. The application reads inventory.json from the folder where you start it. Keep that working folder consistent when switching between the desktop and console.
 
@@ -54,6 +54,6 @@ Record the date, tester and any unexpected behaviour. GUI screenshot evidence is
 
 Use one running application per inventory file. The current whole-file storage is intended for a single user. It stores product, batch and discard records. Receipts and sales history are future enhancements.
 
-The final project uses `python3 main.py --final-project`. It adds stock receiving, expiry checks and waste reports. Verify the dates of carried-over stock before selling it in that mode. The desktop applies expiry eligibility when it opens a dated inventory.
+The existing expiry and waste prototype uses `python3 main.py --final-project`. It adds stock receiving, expiry checks and waste reports. Verify the dates of carried-over stock before selling it in that mode. The desktop applies expiry eligibility when it opens a dated inventory.
 
 If the saved file is damaged, startup reports an error. Restore a known-good copy or correct the affected records. Invalid saved data is rejected before a transaction begins.
