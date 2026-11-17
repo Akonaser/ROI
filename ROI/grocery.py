@@ -7,6 +7,7 @@ from grocery_system.validation import parse_quantity, parse_price, parse_date
 
 
 def format_money(sen):
+    # Store money in sen; split it into ringgit and sen for display.
     return f"{sen // 100:,}.{sen % 100:02d}"
 
 
@@ -55,6 +56,7 @@ def add_to_cart(inventory, cart, today, track_expiry):
     if product_id not in inventory.products:
         raise ValueError("Invalid product ID.")
     quantity = read_whole_number("Enter quantity: ")
+    # Include units already in the cart when checking available stock.
     requested = cart.get(product_id, 0) + quantity
     if requested > inventory.available_quantity(product_id, today, track_expiry):
         raise ValueError("Your cart quantity exceeds the available stock.")
