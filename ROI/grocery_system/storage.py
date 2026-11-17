@@ -28,6 +28,7 @@ def load_inventory(path):
             )
             for row in data["waste_entries"]
         ]
+        # Check IDs and cross-references before accepting the saved records.
         product_map = {product.code: product for product in products}
         batch_map = {batch.batch_id: batch for batch in batches}
         if len(product_map) != len(products) or len(batch_map) != len(batches):
