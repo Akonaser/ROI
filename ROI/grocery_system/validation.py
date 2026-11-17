@@ -34,6 +34,7 @@ def validate_product(code, name, price_sen):
 def parse_price(text):
     """Return an exact integer-sen price from an RM amount."""
     try:
+        # Decimal avoids rounding errors when converting money to sen.
         price = Decimal(text.strip())
     except InvalidOperation:
         raise ValueError("Enter a price such as 7.50.") from None
