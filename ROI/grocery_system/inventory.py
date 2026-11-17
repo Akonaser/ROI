@@ -79,6 +79,7 @@ class Inventory:
         if batch.expiry is not None:
             raise ValueError("Choose a batch with an unverified expiry date.")
         self.validate_batch_quantity(batch, quantity)
+        # A partial verification creates a dated batch for just those units.
         if quantity == batch.quantity:
             batch.expiry = expiry
             return batch_id
@@ -97,6 +98,7 @@ class Inventory:
                     available.append(batch)
             elif batch.expiry >= today:
                 available.append(batch)
+        # Sell the earliest expiry first; batch ID breaks ties.
         return sorted(available, key=lambda batch: (batch.expiry or date.max, batch.batch_id))
 
     def available_quantity(self, code, today, track_expiry):
@@ -147,6 +149,7 @@ class Inventory:
         if reason == "Expired" and (batch.expiry is None or batch.expiry >= today):
             raise ValueError("Expired discards require a verified date before today.")
         product = self.products[batch.product_code]
+        # Keep the current price in history even if the product price changes.
         self.waste_entries.append(
             WasteEntry(product.code, batch_id, today, reason, quantity, product.price_sen)
         )
