@@ -14,7 +14,7 @@
         "-v"
       ],
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}/ROI"
       },
       "group": {
         "kind": "test",
@@ -35,7 +35,7 @@
         "main.py"
       ],
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}/ROI"
       },
       "presentation": {
         "reveal": "always",
@@ -53,7 +53,7 @@
         "--demo"
       ],
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}/ROI"
       },
       "presentation": {
         "reveal": "always",
@@ -70,7 +70,7 @@
         "gui.py"
       ],
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}/ROI"
       },
       "presentation": {
         "reveal": "always",
