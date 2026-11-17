@@ -119,6 +119,7 @@ class GroceryApp:
         selected = self.products_table.selection()
         for item in self.products_table.get_children():
             self.products_table.delete(item)
+        # Match product names and IDs without case sensitivity.
         query = self.search.get().strip().casefold()
         for code, product in self.inventory.products.items():
             if query and query not in product.name.casefold() and query not in code.casefold():
@@ -141,6 +142,7 @@ class GroceryApp:
             ))
         _, total = calculate_bill(self.inventory, self.cart)
         self.total.set(f"RM {format_money(total)}")
+        # Checkout is available only when the cart contains items.
         self.checkout_button.configure(state="normal" if self.cart else "disabled")
 
     def add_selected(self):
